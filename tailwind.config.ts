@@ -11,6 +11,18 @@ const config: Config = {
       fontFamily: {
         sans: 'var(--font-roboto)',
       },
+      colors: {
+        product: {
+          main: '#00875F',
+          light: '#00b37e',
+        },
+        base: {
+          background: '#121214',
+          elements: '#202024',
+          text: '#c4c4cc',
+          title: '#e1e1e6',
+        },
+      },
     },
   },
   plugins: [],
