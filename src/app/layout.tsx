@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-roboto',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -19,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className={inter.variable}>
-      <body>{children}</body>
+    <html lang="pt-br" className={roboto.variable}>
+      <body className="bg-gray-950">{children}</body>
     </html>
   )
 }

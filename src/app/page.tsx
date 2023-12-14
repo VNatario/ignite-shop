@@ -1,3 +1,3 @@
 export default function Home() {
-  return <p>Ignite Shop</p>
+  return <p className="text-white">Ignite Shop</p>
 }
