@@ -22,6 +22,10 @@ const config: Config = {
           text: '#c4c4cc',
           title: '#e1e1e6',
         },
+        gradient: {
+          green: '#1ea483',
+          purple: '#7465d4',
+        },
       },
     },
   },
