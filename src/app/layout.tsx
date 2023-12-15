@@ -4,6 +4,7 @@ import './globals.css'
 
 const roboto = Roboto({
   weight: ['400', '700'],
+
   subsets: ['latin'],
   variable: '--font-roboto',
 })
@@ -24,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className={roboto.variable}>
-      <body className="bg-green-main">{children}</body>
+      <body className="antialiased bg-base-background text-base-title">
+        {children}
+      </body>
     </html>
   )
 }
